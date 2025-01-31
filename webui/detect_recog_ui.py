@@ -155,7 +155,7 @@ iface = gr.Interface(
         gr.Image(label='Processed Image'),
         gr.Textbox(label='OCR Text (Upscaled)'),
         gr.Textbox(label='OCR Text (Upscaled + Morph)'),
-        gr.Textbox(label="Annotated Video Path")  # Display video path as text box
+        gr.File(label="Download Processed Video")  # Changed from Textbox to File
     ]
 )
 

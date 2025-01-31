@@ -37,6 +37,23 @@ git clone https://github.com/fannymonori/TF-ESPCN.git
 ```bash
 python webui/detect_recog_ui.py
 ```
+## Outcomes
+
+1. Read Image file
+
+<img src="outcomes/detection_image.PNG" height=1000 width=1000>
+
+2. Error Handle
+
+<img src="outcomes/error_handle_image.PNG" height=1000 width=1000>
+
+3. Process Video file
+
+<img src="outcomes/process_video.PNG" height=1000 width=1000>
+
+4. Video accuracy:
+
+[![Watch the demo video](path/to/thumbnail.jpg)](outputs/clip2_output.mp4)
 
 ## Reference:
 
