@@ -13,7 +13,6 @@ import csv
 
 # Device (Use DirectML if available and desired, otherwise "cuda" or "cpu")
 device = torch_directml.device() if torch_directml.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
-
 # YOLO Model Loading
 yolo_model_path = "./weights/best.pt"  # Replace with your YOLO model path
 if not os.path.exists(yolo_model_path):
