@@ -41,15 +41,15 @@ python webui/detect_recog_ui.py
 
 1. Read Image file
 
-<img src="outcomes/detection_image.PNG" height=1000 width=1000>
+<img src="outcomes/detection_image.PNG" height=500 width=500>
 
 2. Error Handle
 
-<img src="outcomes/error_handle_image.PNG" height=1000 width=1000>
+<img src="outcomes/error_handle_image.PNG" height=500 width=500>
 
 3. Process Video file
 
-<img src="outcomes/process_video.PNG" height=1000 width=1000>
+<img src="outcomes/process_video.PNG" height=500 width=500>
 
 4. Video accuracy:
 

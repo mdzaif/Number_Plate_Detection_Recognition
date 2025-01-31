@@ -14,7 +14,7 @@ from PIL import Image
 device = torch_directml.device() if torch_directml.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
 
 # YOLO Model Loading
-yolo_model_path = r"C:\\Users\\Administrator\\deployment\\weights\\best.pt"  # Replace with your YOLO model path
+yolo_model_path = "./weights/best.pt"  # Replace with your YOLO model path
 if not os.path.exists(yolo_model_path):
     raise FileNotFoundError(f"YOLO model file not found: {yolo_model_path}")
 
@@ -22,7 +22,7 @@ model = YOLO(yolo_model_path)
 model.fuse()  # Optimize
 
 # Super-Resolution Model Loading
-sr_model_path = r"C:\\Users\\Administrator\\deployment\\TF-ESPCN\\export\\ESPCN_x2.pb"  # Replace with your SR model path
+sr_model_path = "./TF-ESPCN/export/ESPCN_x2.pb"  # Replace with your SR model path
 if not os.path.exists(sr_model_path):
     raise FileNotFoundError(f"Super-Resolution model file not found: {sr_model_path}")
 
@@ -62,7 +62,7 @@ def extract_text(image):
 
 # Function to get a random image from error_img directory
 def get_random_error_image():
-    error_img_dir = Path(r"C:\\Users\\Administrator\\deployment\\error_img")
+    error_img_dir = Path("./error_img")
     valid_image_extensions = ['.png', '.jpeg', '.jpg', '.webp']
     images = [f for f in error_img_dir.iterdir() if f.suffix.lower() in valid_image_extensions]
     return random.choice(images) if images else None
