@@ -1,4 +1,5 @@
 webui/.gradio
+.gradio/
 deploy/
 
 
