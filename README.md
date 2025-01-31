@@ -53,7 +53,7 @@ python webui/detect_recog_ui.py
 
 4. Video accuracy:
 
-[![Watch the demo video](path/to/thumbnail.jpg)](outputs/clip2_output.mp4)
+[![Watch the demo video](path/to/thumbnail.jpg)](https://drive.google.com/file/d/1LnKXFotfC6AccLzRyKlaFYWXOtusHg47/view?usp=sharing)
 
 ## Reference:
 
