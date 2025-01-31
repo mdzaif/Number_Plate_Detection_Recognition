@@ -1,6 +1,6 @@
 # Get Started
 
-## Breif Story:
+## Brief Story:
 
 This model is yolov5-s model which is trained on custom image dataset. The main purpose of this work is to detect Bangladeshi vehicle number plate and recognize the number plate by using easyocr.
 

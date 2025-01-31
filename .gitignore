@@ -1,5 +1,4 @@
 webui/.gradio
-TF-ESPCN/
-deploy
+deploy/
 
 
