@@ -24,9 +24,14 @@ deploy\Scripts\activate
 1. Install Libraries
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt # for windows machine
 ```
-2. Clone the repository of image upscaling DL model
+
+```bash
+pip install -r require.txt
+```
+
+2. Clone the repository of image upscaling DL model (if it not in my repo)
 
 ```bash
 git clone https://github.com/fannymonori/TF-ESPCN.git
