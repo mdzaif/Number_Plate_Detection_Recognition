@@ -11,7 +11,7 @@ First, clone this repository. After that, follow those quick steps:
 
 1. Create virtual Environment
 ```bash
-python -m venv deploy
+python -m venv deploy # require for local machine
 ```
 2. Activate the Enviroment:
 
@@ -28,7 +28,7 @@ pip install -r requirements.txt # for windows machine
 ```
 
 ```bash
-pip install -r require.txt
+pip install -r require.txt # for Nvidia GPU and cloud platform (Kaggle, Google Colab)
 ```
 
 2. Clone the repository of image upscaling DL model (if it not in my repo)
@@ -40,8 +40,13 @@ git clone https://github.com/fannymonori/TF-ESPCN.git
 ## Run my code:
 
 ```bash
-python webui/detect_recog_ui.py
+python webui/detect_recog_dml.py # For other gpu (AMD, INTEL) also required for windows environment
 ```
+
+```bash
+python webui/detect_recog_cuda.py # For Nvidia GPUs and suitable for cloud platform like (kaggle, Google Colab)
+```
+
 ## Outcomes
 
 1. Read Image file
