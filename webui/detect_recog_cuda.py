@@ -162,7 +162,9 @@ iface = gr.Interface(
         gr.Textbox(label='OCR Text (Upscaled)'),
         gr.Textbox(label='OCR Text (Upscaled + Morph)'),
         gr.File(label="Download Processed Video and CSV", file_count="multiple")
-    ]
+    ],
+    title="Bangla Vehicle Number Plate Detection & Recognition",  # Add title here
+    flagging_dir="flagged_data"  # Save flagged inputs/outputs in this folder
 )
 
 if __name__ == "__main__":

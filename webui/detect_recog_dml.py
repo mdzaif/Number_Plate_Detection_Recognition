@@ -167,14 +167,16 @@ iface = gr.Interface(
     fn=gradio_interface,
     inputs=[
         gr.Image(type='numpy', label='Upload Image'),
-        gr.File(label='Upload Video', type="filepath")  # Video file input
+        gr.File(label='Upload Video', type="filepath")
     ],
     outputs=[
         gr.Image(label='Processed Image'),
         gr.Textbox(label='OCR Text (Upscaled)'),
         gr.Textbox(label='OCR Text (Upscaled + Morph)'),
-        gr.File(label="Download Processed Video and CSV", file_count="multiple")  # Added multiple files output
-    ]
+        gr.File(label="Download Processed Video and CSV", file_count="multiple")
+    ],
+    title="Bangla Vehicle Number Plate Detection & Recognition",  # Add title here
+    flagging_dir="flagged_data"  # Save flagged inputs/outputs in this folder
 )
 
 if __name__ == "__main__":
