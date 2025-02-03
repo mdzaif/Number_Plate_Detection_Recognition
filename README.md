@@ -7,16 +7,25 @@ This model is yolov5-s model which is trained on custom image dataset. The main 
 ## To see my work:
 First, clone this repository. After that, follow those quick steps:
 
-## Virtual Environment:
+## Virtual Environment (Local Machine):
 
 1. Create virtual Environment
 ```bash
-python -m venv deploy # require for local machine
+python -m venv deploy # windows
 ```
-2. Activate the Enviroment:
 
 ```bash
-deploy\Scripts\activate
+virtualenv -p /usr/bin/python3 deploy # linux
+```
+
+2. Activate the Enviroment:
+
+```shell
+deploy\Scripts\activate # windows
+```
+
+```bash
+deploy/Scripts/activate # In Linux
 ```
 
 ## Install Dependencies:
@@ -44,9 +53,15 @@ python webui/detect_recog_dml.py # For other gpu (AMD, INTEL) also required for 
 ```
 
 ```bash
-python webui/detect_recog_cuda.py # For Nvidia GPUs and suitable for cloud platform like (kaggle, Google Colab)
+python3 webui/detect_recog_dml.py # For other gpu (AMD, INTEL) also required for linux environment
 ```
 
+```bash
+python webui/detect_recog_cuda.py # For Nvidia GPUs and suitable for cloud platform like (kaggle, Google Colab)
+```
+```bash
+python3 webui/detect_recog_cuda.py # For Nvidia GPUs and Linux
+```
 ## Outcomes
 
 1. Read Image file
