@@ -76,9 +76,12 @@ python3 webui/detect_recog_cuda.py # For Nvidia GPUs and Linux
 
 <img src="outcomes/process_video.PNG" height=500 width=500>
 
-4. Video accuracy:
+4. Video output:
 
 [![Watch the demo video](path/to/thumbnail.jpg)](https://drive.google.com/file/d/1LnKXFotfC6AccLzRyKlaFYWXOtusHg47/view?usp=sharing)
+
+5. Visualize work:
+[![Watch the demo video](path/to/thumbnail.jpg)](https://drive.google.com/file/d/14a_opX0gq3NgEcvjFlq__2Z13n-SGLpK/view?usp=drive_link)
 
 ## Reference:
 
