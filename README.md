@@ -22,64 +22,7 @@ real-time Bangla vehicle number plate detection and recognition, making it highl
 deployment in intelligent traffic monitoring and law enforcement systems within Bangladesh.</p><p>
 Keywords: Object Detection, Character Recognition, YOLOv5, EasyOCR </p>
 
-## To see my work:
-First, clone this repository. After that, follow those quick steps:
 
-## Virtual Environment (Local Machine):
-
-1. Create virtual Environment
-```bash
-python -m venv deploy # windows
-```
-
-```bash
-virtualenv -p /usr/bin/python3 deploy # linux
-```
-
-2. Activate the Enviroment:
-
-```shell
-deploy\Scripts\activate # windows
-```
-
-```bash
-deploy/Scripts/activate # In Linux
-```
-
-## Install Dependencies:
-
-1. Install Libraries
-
-```bash
-pip install -r requirements.txt # for windows machine
-```
-
-```bash
-pip install -r require.txt # for Nvidia GPU and cloud platform (Kaggle, Google Colab)
-```
-
-2. Clone the repository of image upscaling DL model (if it not in my repo)
-
-```bash
-git clone https://github.com/fannymonori/TF-ESPCN.git
-```
-
-## Run my code:
-
-```bash
-python webui/detect_recog_dml.py # For other gpu (AMD, INTEL) also required for windows environment
-```
-
-```bash
-python3 webui/detect_recog_dml.py # For other gpu (AMD, INTEL) also required for linux environment
-```
-
-```bash
-python webui/detect_recog_cuda.py # For Nvidia GPUs and suitable for cloud platform like (kaggle, Google Colab)
-```
-```bash
-python3 webui/detect_recog_cuda.py # For Nvidia GPUs and Linux
-```
 ## Outcomes
 
 1. Read Image file
